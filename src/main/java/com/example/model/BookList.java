@@ -13,7 +13,7 @@ public class BookList {
     @Column(name = "id")
     private Long id;
     @Column(name = "book_name")
-    private String BookName;
+    private String bookName;
     @Column(name = "author_name")
-    private String AuthorName;
+    private String authorName;
 }
