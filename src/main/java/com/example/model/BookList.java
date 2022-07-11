@@ -16,4 +16,5 @@ public class BookList {
     private String bookName;
     @Column(name = "author_name")
     private String authorName;
+
 }
