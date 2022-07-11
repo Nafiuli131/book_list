@@ -38,4 +38,11 @@ public class BookListController {
         bookListService.deleteAll();
         return new ResponseEntity<String >("all deleted succesfully",HttpStatus.OK);
     }
+    //Query based repo
+    @GetMapping("getName/{id}")
+    public String getName(@PathVariable("id") long id){
+
+      return bookListService.findName(id);
+
+    }
 }

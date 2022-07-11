@@ -45,5 +45,11 @@ public class BookListService {
     public void deleteAll(){
         bookListRepo.deleteAll();
     }
-
+    public String findName(Long id){
+        if(bookListRepo.findName(id)==null){
+            return "No book found";
+        }else {
+        return bookListRepo.findName(id);
+        }
+    }
 }
